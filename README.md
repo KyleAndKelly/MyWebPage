@@ -2,6 +2,8 @@
 #执行过程
 提前安装好 npm ，node，pm2环境
 然后进入项目文件夹下
+
+
 @npm init //安装依赖包
 
 @node app.js或者 pm2 start app.js --watch//执行
