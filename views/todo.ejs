@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--下面的是头部分-->
+
+<head>
+  <meta charset="UTF-8">
+  <title>Todo list</title>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script><!--为了使用jQuery必须引入jQuery的库-->
+  <link rel="stylesheet" href="/assets/styles.css" type="text/css"><!--引入静态资源中的css-->
+  <script src="/assets/todo-list.js"></script><!--引入静态资源中的js文件-->
+</head>
+
+
+
+<!--下面是主体部分-->
+<body>
+  <div id="todo-table">  <!--和css文件中的todo-table相呼应-->
+    <form>
+      <input type="text" name='item' placeholder="Add new item..." required />   <!--输入框-->
+      <button type="submit">Add Item</button> <!--按钮 按下按钮触发一个submit事件 进入js文件中查看事件如何运作-->
+    </form>
+    <ul>
+      <% todos.forEach(function(todo) { %>
+        <li><%= todo.item %></li>
+      <% }) %>
+    </ul>
+  </div>
+</body>
+</html>
