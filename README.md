@@ -1,4 +1,10 @@
 
+#执行过程
+
+@npm init //安装依赖包
+
+@node app.js或者 pm2 start app.js --watch//执行
+
 #项目结构
 
 package.json放置程序基本信息 依赖项
@@ -20,8 +26,5 @@ app.js是整个程序的入口文件 过程是
 
 更详细的内容看代码中的注释
 
-#执行过程
 
-@npm init //安装依赖包
-@node app.js或者 pm2 start app.js --watch//执行
 
